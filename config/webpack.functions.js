@@ -1,0 +1,13 @@
+const webpack = require('webpack')
+
+module.exports = {
+    mode: "development",
+    plugins: [
+        new webpack.DefinePlugin({ "global.GENTLY": false })
+    ],
+    target: "node",
+    resolve: {
+        extensions: [".js"],
+        mainFields: ["main"],
+    }
+}

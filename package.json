@@ -1,0 +1,21 @@
+{
+  "name": "NetlifyNewsApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda -c ./config/webpack.functions.js serve src",
+    "build": "./node_modules/.bin/netlify-lambda -c ./config/webpack.functions.js serve src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
+    "newsapi": "^2.4.1",
+    "node-fetch": "^2.6.0",
+    "serverless-http": "^2.5.0"
+  }
+}
